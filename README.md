@@ -1,110 +1,309 @@
-# 🔥🔥🔥 Epistemic Exploration Toward Artificial General Intelligence
+# 🔥 Epistemic Exploration Toward Artificial General Intelligence
 
-**"Epistemic Exploration Toward Artificial General Intelligence"** (ArXiv 2026) 
+<p align="center">
+  <b>"Epistemic Exploration Toward Artificial General Intelligence"</b>
+  <br>
+  <i>ArXiv 2026</i>
+  <br><br>
+  <b>◇ Responder → Reasoner → Agent → Prospector → Ecosystem ◇</b>
+  <br>
+  <i>Exploration as the Transition Mechanism</i>
+</p>
 
-*Ban Yikun et al.*
+<!-- Logo: 取消注释并替换为您自己的图片路径 -->
+<!-- <p align="center"><img src="fig/logo.png" width="700"/></p> -->
 
-<!-- 替换为您自己的 Logo 链接 -->
-<!-- ![Logo](fig/logo.png) -->
+<p align="center">
+  <!-- <a href="#"><img src="https://img.shields.io/badge/📄_Paper-ArXiv-red" alt="Paper"></a> -->
+  <!-- <a href="#"><img src="https://img.shields.io/badge/🌐_Website-Project_Page-blue" alt="Website"></a> -->
+  <a href="https://github.com/banyikun/epistemic_exploration"><img src="https://img.shields.io/badge/GitHub-Repository-181717?logo=github" alt="GitHub"></a>
+  <a href="#"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Maintained%3F-Yes-brightgreen.svg" alt="Maintained"></a>
+  <a href="#"><img src="https://img.shields.io/badge/PRs-Welcome-orange.svg" alt="PRs Welcome"></a>
+</p>
 
-[![Website](https://img.shields.io/badge/Website-gray)](#) [![Blog](https://img.shields.io/badge/Blog-Chinese-red)](#)
+<p align="center">
+  <a href="https://github.com/banyikun/epistemic_exploration/stargazers"><img src="https://img.shields.io/github/stars/banyikun/epistemic_exploration?style=social" alt="GitHub stars"></a>
+  <a href="https://github.com/banyikun/epistemic_exploration/network/members"><img src="https://img.shields.io/github/forks/banyikun/epistemic_exploration?style=social" alt="GitHub forks"></a>
+</p>
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](#) [![License](https://img.shields.io/badge/License-MIT-blue.svg)](#) [![Awesome](https://awesome.re/badge.svg)](#) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#)
-
-##### If you like our project, please give it a star ⭐ to show your support！Thank you:)
-
-# 📣 Notices
-
-> 🔥🔥🔥 This is a collection of papers on _**Epistemic Exploration Toward AGI**_.  
-> 
-> 🔥🔥🔥 **[Stay tuned for our journal-style paper, incorporating the latest papers proposed in recent months.]**
->
-> **[Always] [Add your papers in this repo]** _**Thank you to all the papers that have cited our survey! We will add all related citing papers to this GitHub repo, in a timely manner, to help increase the visibility of your contributions.**_
->
-> **[Always] [Maintain]** _**We will make this list updated frequently!**_  
-> If you found any error or any missed/new paper, please don't hesitate to contact us or submit Pull requests.
-
----
-
-* Contents
-  * 1. Epistemic Exploration and Taxonomy
-        * 1.1 Abstract
-        * 1.2 Taxonomy and The Five-Level Trajectory
-  * 2. Papers
-        * 2.1 Responder $\to$ Reasoner (Reasoning-Space Exploration)
-        * 2.2 Reasoner $\to$ Agent (Interaction-Space Exploration)
-        * 2.3 Agent $\to$ Prospector (Imagination-Space Exploration)
-        * 2.4 Prospector $\to$ Ecosystem (Coordination-Space Exploration)
-  * 3. Citation
+> **If you find our survey helpful, please give it a ⭐ star to show your support! Thank you :)**
 
 ---
 
-# 1. Epistemic Exploration and Taxonomy
+## 📣 Notices
 
-## 1.1 Abstract
+> 🔥 This is a curated paper list for the survey **"Epistemic Exploration Toward Artificial General Intelligence"**, covering exploration mechanisms across reasoning, embodied AI, world models, and multi-agent systems.
 
-**Paper Abstract**:
+> 🔥 **[Stay tuned for our full paper release, incorporating the latest developments.]**
 
-Exploration is not an optional behavior in natural intelligence; it is its organizing principle. Curiosity, play, and deliberate probing emerge as intrinsic responses to uncertainty, enabling organisms to build internal models, expand competence, and maintain adaptability. We argue that the same holds for artificial general intelligence (AGI): *exploration is not a heuristic added to learning, but the engine that makes generality possible*. 
+> **[Always] [Add your papers]** We welcome all related papers! If you find any missed or new work, please open a Pull Request or contact us.
 
-We develop a unified view of **epistemic exploration**—the capacity of an agent to actively acquire new information that reduces its uncertainty about the world, convert that information into durable improvements in its own capabilities, and maintain the readiness to adapt when the world changes. Building on three criteria—information gain, capability improvement, and adaptive readiness—we show why passive, static optimization is structurally insufficient in open worlds.
-
-## 1.2 Taxonomy and The Five-Level Trajectory
-
-We introduce a **five-level trajectory toward AGI** and position exploration as the *transition mechanism* between levels:
-
-* **Responder $\to$ Reasoner**: a responder is limited to trained input–output mappings; reasoning-space exploration lets the agent actively search hypothesis spaces, explore deliberate reasoning trajectories, and verify its own conclusions;
-* **Reasoner $\to$ Agent**: a reasoner deliberates internally but cannot access information available only through action; interaction-space exploration extends the agent into embodied perception, tool use, and closed-loop action under partial observability;
-* **Agent $\to$ Prospector**: an agent learns from real interaction but is bottlenecked by its cost and risk; imagination-space exploration lets the agent explore imagined trajectories in a learned world model, converting simulated experience into durable long-horizon policies;
-* **Prospector $\to$ Ecosystem**: a single prospector is bounded by what one agent can explore alone; coordination-space exploration lets collectives co-evolve roles, shared representations, and collaborative strategies in open environments.
+> **[Always] [Maintain]** We will keep this list updated frequently!
 
 ---
 
-# 2. Papers
+## 📑 Table of Contents
 
-*(💡 Note: You can constantly update these paper lists based on your `.bib` files and `VLA_RL_overview_MANUAL_REVIEW.md`)*
-
-## 2.1 Responder $\to$ Reasoner (Reasoning-Space Exploration)
-
-* **DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning.** (2025)  
-  Name: DeepSeek-R1, Code: -
-* **A Survey of Reasoning with Foundation Models: Concepts, Methodologies, and Outlook.** (2025)  
-* **Eureka: Human-Level Reward Design via Coding Large Language Models.** (2024)  
-  Name: Eureka
-
-## 2.2 Reasoner $\to$ Agent (Interaction-Space Exploration)
-
-* **Open X-Embodiment: Robotic Learning Datasets and RT-X Models.** (2024)  
-  Name: Open X-Embodiment
-* **RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation.** (2024)  
-  Name: RDT-1B
-* **RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control.** (2023)  
-  Name: RT-2
-* **Precise and dexterous robotic manipulation via human-in-the-loop reinforcement learning.** (2025)  
-* **SERL: A Software Suite for Sample-Efficient Robotic Reinforcement Learning.** (2024)  
-  Name: SERL
-
-## 2.3 Agent $\to$ Prospector (Imagination-Space Exploration)
-
-* **Learning Latent Dynamics for Planning from Pixels.** (2019)  
-* **iVideoGPT: Interactive VideoGPTs are Scalable World Models.** (2024)  
-  Name: iVideoGPT
-* **Exploration by Random Network Distillation.** (2019)  
-  Name: RND
-
-## 2.4 Prospector $\to$ Ecosystem (Coordination-Space Exploration)
-
-* **Decentralized Task Allocation in Multi-robot Exploration with Position Sharing Only.** (2021)  
+- [1. Overview](#1-overview)
+  - [1.1 What is Epistemic Exploration?](#11-what-is-epistemic-exploration)
+  - [1.2 Three Criteria](#12-three-criteria)
+  - [1.3 Five-Level Trajectory Toward AGI](#13-five-level-trajectory-toward-agi)
+  - [1.4 3×5 Taxonomy](#14-3×5-taxonomy)
+- [2. Level 1–2: Responder → Reasoner (Reasoning-Space Exploration)](#2-levels-12-responder--reasoner--reasoning-space-exploration)
+  - [2.1 Uncertainty-Driven Exploration](#21-uncertainty-driven-exploration)
+  - [2.2 Competence-Driven Exploration](#22-competence-driven-exploration)
+  - [2.3 Reachability-Driven Exploration](#23-reachability-driven-exploration)
+- [3. Level 3: Reasoner → Agent (Perception- & Action-Space Exploration)](#3-level-3-reasoner--agent--perception--action-space-exploration)
+  - [3.1 Digital Agents](#31-digital-agents)
+  - [3.2 Embodied Agents](#32-embodied-agents)
+- [4. Level 4: Agent → Prospector (Imagination-Space Exploration)](#4-level-4-agent--prospector--imagination-space-exploration)
+- [5. Level 5: Prospector → Ecosystem (Coordination-Space Exploration)](#5-level-5-prospector--ecosystem--coordination-space-exploration)
+- [6. Cross-Cutting Topics](#6-cross-cutting-topics)
+- [7. Citation](#7-citation)
 
 ---
 
-## 3. Citing This Paper
+## 1. Overview
+
+### 1.1 What is Epistemic Exploration?
+
+> **Epistemic exploration** is the agent's capacity to actively acquire information that reduces its uncertainty about the world, convert that reduction into durable policy improvement, and keep future acquisition possible.
+
+Unlike undirected exploration (e.g., ε-greedy), epistemic exploration is *intentional*, *belief-driven*, and *multi-scale*: the agent reasons about which actions are most informative and plans multi-step information-gathering strategies across reasoning trajectories, tool-use policies, embodied sensorimotor loops, world-model rollouts, and multi-agent coordination protocols.
+
+### 1.2 Three Criteria
+
+We ground epistemic exploration in **three jointly necessary criteria**, each addressing a distinct failure mode of static optimisation:
+
+| Criterion | What It Does | Failure Mode Addressed | Explores... |
+|:---------:|:-------------|:-----------------------|:------------|
+| **C1: Information Gain** | Actively reduces epistemic uncertainty via belief-updating observations | *Belief Stagnation* — frozen internal model under distribution shift | ...where it knows least |
+| **C2: Value Improvement** | Converts new information into durable policy improvement | *Value Stagnation* — local optima lock-in, surrogate misalignment | ...what it cannot yet do well |
+| **C3: Epistemic Reachability** | Preserves positive visitation over belief-consistent regions | *Reachability Collapse* — irreversible contraction of behavioural diversity | ...where it might otherwise never go |
+
+These form a closed loop: **gain information → convert to value → keep the capacity to gain information alive → ...**
+
+### 1.3 Five-Level Trajectory Toward AGI
+
+We propose exploration as the **transition mechanism** between five levels of increasing agent sophistication. Each level introduces a qualitatively new exploration space that the previous level cannot access:
+
+```
+┌──────────────┐    reasoning-space     ┌──────────────┐    interaction-space    ┌──────────────┐
+│  L1 Responder│───── exploration ──────▶│  L2 Reasoner │───── exploration ──────▶│  L3 Agent    │
+│  (reactive)  │                        │  (deliberate)│                        │  (situated)  │
+└──────────────┘                        └──────────────┘                        └──────┬───────┘
+                                                                                       │
+                                                                          imagination-space
+                                                                            exploration
+                                                                                       │
+┌──────────────┐    coordination-space  ┌──────────────┐                        ┌──────▼───────┐
+│ L5 Ecosystem │◀──── exploration ──────│L4 Prospector │◀───────────────────────│  (world-model│
+│ (collective) │                        │  (imaginer)  │                        │   grounded)  │
+└──────────────┘                        └──────────────┘                        └──────────────┘
+```
+
+| Transition | Exploration Space | What Becomes Explorable |
+|:-----------|:------------------|:------------------------|
+| **L1→L2: Responder → Reasoner** | Reasoning space | Hypotheses, reasoning trajectories, latent thought representations |
+| **L2→L3: Reasoner → Agent** | Perception & action space | Tool invocation, sensorimotor loops, memory management |
+| **L3→L4: Agent → Prospector** | Imagination space | Counterfactual futures in learned world models, dual real-imagined exploration |
+| **L4→L5: Prospector → Ecosystem** | Coordination space | Communication topologies, role assignments, shared world models |
+
+### 1.4 3×5 Taxonomy
+
+Our survey is organized as a **3×5 taxonomy** crossing three signal-driven methodologies with the five levels:
+
+|  | **L1 Responder** | **L2 Reasoner** | **L3 Agent** | **L4 Prospector** | **L5 Ecosystem** |
+|:-|:---|:---|:---|:---|:---|
+| **Uncertainty-Driven** | Token entropy | Ensemble disagreement, semantic uncertainty | Active SLAM, prediction variance | Epistemic disagreement in latent space | Joint-belief uncertainty |
+| **Competence-Driven** | Input difficulty | Iterative curricula, self-play | Skill bootstrapping, RL-VLA | Imagination-based skill discovery | Multi-agent self-play curricula |
+| **Reachability-Driven** | Anti-repetition | Beam diversity, reasoning-path anti-foreclosure | Go-Explore, coverage curricula | Latent-space diversity bonuses | Role-diversity, anti-specialisation |
+
+---
+
+## 2. Levels 1–2: Responder → Reasoner — Reasoning-Space Exploration
+
+The transition from **Responder** to **Reasoner** requires exploration in *reasoning space*: branching over token sequences, reasoning trajectories, and latent thought representations. The agent must search for informative hypotheses rather than simply produce reactive outputs.
+
+### 2.1 Uncertainty-Driven Exploration
+
+Methods that prioritise exploration at high-uncertainty branching points in the reasoning process:
+
+| Method | Strategy | Paper |
+|:-------|:---------|:------|
+| **CURE** | High-entropy tokens as re-branching anchors | Uncertainty-aware Reasoning Enhancement (2025) |
+| **SPINE** | Concentrates updates on high-entropy branching points | Sparse Inference with Entropy (2025) |
+| **TreeRL** | On-policy tree search from high-entropy steps | Tree-Structured RL for Reasoning (2025) |
+| **CE-GPPO** | Coordinating entropy-gradient preservation | CE-GPPO (2025) |
+| **SIREN** | Top-p & peak-entropy masks for meaningful exploration | Rethinking Entropy in LLM Reasoning (2025) |
+| **AEPO** | Anchors entropy to user-specified target level | Arbitrary Entropy Policy Optimization (2025) |
+| **ICPO** | Intrinsic confidence from relative generation probabilities | Intrinsic Confidence Policy Optimization (2025) |
+| **REAL** | Categorical labels replacing scalar rewards | Rewards as Labels (2026) |
+
+### 2.2 Competence-Driven Exploration
+
+Methods that match problem difficulty to the model's evolving competence frontier:
+
+| Method | Strategy | Paper |
+|:-------|:---------|:------|
+| **E2H** | Easy-to-hard curriculum with gradual fade-out | Easy to Hard Curriculum (2025) |
+| **RLAAR** | Ability-gated curriculum with abstention reward | RL with Abstention-Aware Rewards (2025) |
+| **Online Difficulty Filtering** | Selects medium-difficulty samples by current success rate | Dynamic Difficulty Filtering (2025) |
+| **CDAS** | Historical performance gaps for robust difficulty estimation | Competence-Driven Adaptive Sampling (2025) |
+| **HA-DW** | Tracks evolving competence, reweights difficulty | Hardness-Aware Dynamic Weighting (2026) |
+| **SvS** | Self-synthesized harder variants from solved examples | Solve via Self-play (2025) |
+| **Absolute Zero** | Reinforced self-play with zero external data | Absolute Zero Reasoner (2025) |
+
+### 2.3 Reachability-Driven Exploration
+
+Methods that prevent irreversible contraction of reasoning trajectory distributions:
+
+| Method | Strategy | Paper |
+|:-------|:---------|:------|
+| **Trust-region methods** | KL penalties, PPO clipping to preserve pre-trained breadth | Various (2025) |
+| **Anti-degeneration penalties** | Repetition penalties, length-budget constraints | Welleck et al. (2020), various (2025) |
+| **SPO / KTAE** | Step-level credit assignment preserving alternative trajectories | Step Policy Optimization / KTAE (2025) |
+| **VRPRM** | Process-level dense supervision for intermediate steps | Verifiable Reward PRM (2025) |
+| **RLVRR** | Content coverage + style constraints for denser rewards | RL with Verifiable & Reward-Rich feedback (2026) |
+
+---
+
+## 3. Level 3: Reasoner → Agent — Perception- & Action-Space Exploration
+
+At Level 3, the agent crosses from internal reasoning into **situated interaction with external environments**. Exploration unfolds in perception and action space, where every step incurs real cost.
+
+### 3.1 Digital Agents
+
+Agents operating in software-mediated environments (web, APIs, code interpreters):
+
+| Paradigm | Method | Key Idea |
+|:---------|:-------|:---------|
+| **Uncertainty-Driven** | JitRL | Count-based exploration bonus for unseen state-action pairs |
+| | Agent Q | MCTS with UCB for strategic state exploration |
+| | KnowSelf | Self-perceived capability boundaries trigger reflection |
+| | Search-o1 | Invokes web search upon encountering unfamiliar knowledge |
+| **Competence-Driven** | PilotRL | Three-stage progressive RL curriculum |
+| | Planner-R1 | Dense process-level rewards as priors |
+| | RLTR | Tool-use completeness rewards |
+| | Agent0-VL | Self-Evolving Reasoning Cycle (SERC) |
+| | Absolute Zero | Joint proposer-solver self-play |
+| **Reachability-Driven** | EGPO | Entropy bonus in advantage over CoT tokens |
+| | EPO | Three-part entropy control for multi-turn RL |
+| | RAPO | Retrieval-augmented policy optimization |
+| | E³-TIR | Expert-guided branching at high-entropy prefixes |
+
+### 3.2 Embodied Agents
+
+Agents operating in physical/simulated environments with continuous action spaces:
+
+| Paradigm | Method | Key Idea |
+|:---------|:-------|:---------|
+| **Uncertainty-Driven (Active Perception)** | ActiveSplat | Gaussian splatting for information-maximizing viewpoint selection |
+| | Conan | Active reasoning in open-world environments |
+| | ActiveRIR | Cross-modal audio-visual exploration |
+| | Fisher-info path planning | Balances information gain with localization robustness |
+| **Competence-Driven** | **Offline RL-VLA**: Q-Transformer, Cal-QL | Scale value learning to static trajectories |
+| | **Online RL-VLA**: VLA-RL, FLaRe, SimpleVLA-RL | Real-time interactive policy exploration |
+| | **Hybrid**: ConRFT, SRPO, Dual-Actor | Stable offline-to-online transitions |
+| | **Test-Time**: VLA-Reasoner (MCTS), DeepThinkVLA, Hume | Imagination before physical execution |
+| | SayCan, Inner Monologue, LM-Nav | Language-guided objective-driven navigation |
+| **Reachability-Driven** | Eureka | LLM-driven reward code synthesis |
+| | Recovery RL, RECOVER, SafeVLA | Learned safety zones preserving reachable sets |
+| | RND, CurricuLLM | Curiosity-driven and curriculum-based coverage |
+
+---
+
+## 4. Level 4: Agent → Prospector — Imagination-Space Exploration
+
+The Prospector internalises a **world model** and faces a **dual exploration problem**: simultaneously gathering real data to refine the model AND searching imagined trajectories to extract policies.
+
+| Challenge | Description | Key Methods |
+|:----------|:------------|:------------|
+| **Compounding Errors** | Single-step prediction errors accumulate exponentially over imagined horizons | MBPO, PETS, Dreamer v4 |
+| **Noise-Hijacking Trap** | Curiosity wasted on irreducible stochasticity (noisy-TV problem) | RND, RIDES, learning-progress monitoring |
+| **Fatal Detail Loss** | Safety-critical information lost in latent compression | Structured latent representations, 4D sparse voxels |
+
+**Core World Model Families:**
+
+| Method | Key Contribution |
+|:-------|:-----------------|
+| **Dreamer v1/v2/v3/v4** | Progressive imagination-based skill discovery in learned latent spaces |
+| **DayDreamer** | Transfers imagination-based paradigm to physical robots |
+| **PETS** | Ensemble-based disentanglement of aleatoric vs. epistemic uncertainty |
+| **Plan2Explore** | Task-agnostic exploration via maximizing future ensemble disagreement |
+| **MuZero** | Learned dynamics model with MCTS for planning |
+| **iVideoGPT** | Interactive video generation as scalable world models |
+| **World-Env / WMPO** | Internal simulators for safe GRPO/PPO updates in VLA |
+
+---
+
+## 5. Level 5: Prospector → Ecosystem — Coordination-Space Exploration
+
+At the highest level, exploration enters **coordination space**: heterogeneous agents discover communication topologies, role specialisations, shared representations, and collaborative strategies.
+
+| Challenge | Description |
+|:----------|:------------|
+| **Scalable Coordination Exploration** | The search space is combinatorial, hierarchical, and dynamic—which agents to activate, what communication to establish, how information flows |
+| **Ecosystem-Level Credit Assignment** | Disentangling behavioural contribution from structural contribution under sparse, delayed feedback |
+| **Diversity vs. Convergence Tension** | Balancing ecological diversity against system-level coherence |
+| **Role–Communication Co-evolution** | Jointly evolving functional specialisation and information exchange protocols |
+
+**Key Systems & Methods:**
+
+| Method | Key Contribution |
+|:-------|:-----------------|
+| **MetaGPT** | Structured multi-agent coordination with role-based workflows |
+| **AutoGen** | Flexible conversational multi-agent framework |
+| **CAMEL** | Communicative agents for mind exploration |
+| **Multi-agent Debate** | Structured deliberation improving collective reasoning (Du et al.) |
+| **Learnable orchestration** | RL-evolved coordination topologies, optimisable agent graphs |
+
+---
+
+## 6. Cross-Cutting Topics
+
+### Foundations
+- **Three failure modes of static optimisation**: Belief Stagnation, Value Stagnation, Reachability Collapse
+- **Unified Epistemic Exploration Objective**: Combines Bayes-optimal value (C2), cumulative information gain bonus (C1), and reachability constraint (C3)
+- **Convergence**: As beliefs converge to truth, exploration automatically gives way to exploitation
+
+### Biological Exploration Parallels
+- **Sensory-motor embodiment** → Lévy flights, whisking, saccades
+- **Intrinsic curiosity** → Dopaminergic information prediction errors
+- **Meta-control** → Locus coeruleus-norepinephrine regulation
+- **Cognitive simulation** → Hippocampal preplay sequences
+- **Social exploration** → Swarm intelligence, Theory of Mind
+
+### Evaluation Principles
+- Benchmarks for epistemic exploration across reasoning, embodied AI, world models, and multi-agent settings
+- Design principles for exploration-centric evaluation
+
+### Open Challenges
+- Open-domain scalable exploration for reasoning beyond verifiable tasks
+- Safe exploration with predictive world action models
+- Causal and counterfactual reasoning in imagination space
+- Dynamic temporal abstraction for long-horizon planning
+- Epistemic uncertainty quantification in imagination
+- Scalable coordination-space exploration without combinatorial explosion
+
+---
+
+## 7. Citation
+
+If you find this survey useful, please cite:
 
 ```bibtex
-@article{epistemic_exploration_2026,
+@article{ban2026epistemic,
   title={Epistemic Exploration Toward Artificial General Intelligence},
   author={Ban, Yikun and others},
   journal={arXiv preprint arXiv:XXXX.XXXXX},
   year={2026}
 }
 ```
+
+---
+
+<p align="center">
+  <i>This repository is actively maintained. If you find any errors or have new papers to suggest, please open an issue or submit a pull request!</i>
+</p>
