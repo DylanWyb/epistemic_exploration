@@ -1,16 +1,20 @@
-# 🔥 Epistemic Exploration Toward Artificial General Intelligence
+
+<h1 align="center">🔥 Awesome-Epistemic-Exploration
+
+"Epistemic Exploration Toward Artificial General Intelligence"  (ArXiv 2026) </h2>
+
+
+
 
 <p align="center">
-  <b>"Epistemic Exploration Toward Artificial General Intelligence"</b>
-  <br>
-  <i>ArXiv 2026</i>
-  <br><br>
   <b>◇ Responder → Reasoner → Agent → Prospector → Ecosystem ◇</b>
   <br>
   <i>Exploration as the Transition Mechanism</i>
 </p>
 
 <p align="center"><img src="fig/5levels.png" width="900"/></p>
+
+
 
 <p align="center">
   <!-- <a href="#"><img src="https://img.shields.io/badge/📄_Paper-ArXiv-red" alt="Paper"></a> -->
@@ -19,6 +23,8 @@
   <a href="#"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"></a>
   <a href="#"><img src="https://img.shields.io/badge/Maintained%3F-Yes-brightgreen.svg" alt="Maintained"></a>
   <a href="#"><img src="https://img.shields.io/badge/PRs-Welcome-orange.svg" alt="PRs Welcome"></a>
+  </a>
+  <a href=""><img src="https://img.shields.io/github/last-commit/banyikun/epistemic_exploration?color=lightgrey"></a>
 </p>
 
 <p align="center">
@@ -26,7 +32,12 @@
   <a href="https://github.com/banyikun/epistemic_exploration/network/members"><img src="https://img.shields.io/github/forks/banyikun/epistemic_exploration?style=social" alt="GitHub forks"></a>
 </p>
 
-> **If you find our survey helpful, please give it a ⭐ star to show your support! Thank you :)**
+<h4 align="center">If you find our survey helpful, please give it a star ⭐ to show your support！Thank you:)
+
+</h4>
+
+
+
 
 ---
 
@@ -34,13 +45,18 @@
 
 > 🔥 This is a curated paper list for the survey **"Epistemic Exploration Toward Artificial General Intelligence"**, covering exploration mechanisms across reasoning, embodied AI, world models, and multi-agent systems.
 
-> 🔥 **[Stay tuned for our full paper release, incorporating the latest developments.]**
+> 🔥 **Stay tuned for our full paper release, incorporating the latest developments.**
 
 > **[Always] [Add your papers]** We welcome all related papers! If you find any missed or new work, please open a Pull Request or contact us.
 
 > **[Always] [Maintain]** We will keep this list updated frequently!
 
 ---
+
+
+<br>
+
+
 
 ## 📑 Table of Contents
 
@@ -62,6 +78,8 @@
 - [7. Citation](#7-citation)
 
 ---
+
+
 
 ## 1. Overview
 
@@ -108,6 +126,8 @@ Our survey is organized as a **3×5 taxonomy** crossing three signal-driven meth
 | **Reachability-Driven** | Anti-repetition | Beam diversity, reasoning-path anti-foreclosure | Go-Explore, coverage curricula | Latent-space diversity bonuses | Role-diversity, anti-specialisation |
 
 ---
+
+<br>
 
 ## 2. Levels 1–2: Responder → Reasoner — Reasoning-Space Exploration
 
@@ -159,6 +179,8 @@ Methods that prevent irreversible contraction of reasoning trajectory distributi
 
 ---
 
+<br>
+
 ## 3. Level 3: Reasoner → Agent — Perception- & Action-Space Exploration
 
 At Level 3, the agent crosses from internal reasoning into **situated interaction with external environments**. Exploration unfolds in perception and action space, where every step incurs real cost.
@@ -207,6 +229,8 @@ Agents operating in physical/simulated environments with continuous action space
 
 ---
 
+<br>
+
 ## 4. Level 4: Agent → Prospector — Imagination-Space Exploration
 
 <p align="center"><img src="fig/level4_worldmodel.png" width="850"/></p>
@@ -234,6 +258,8 @@ The Prospector internalises a **world model** and faces a **dual exploration pro
 
 ---
 
+<br>
+
 ## 5. Level 5: Prospector → Ecosystem — Coordination-Space Exploration
 
 <p align="center"><img src="fig/level5_ecosystem.png" width="850"/></p>
@@ -259,6 +285,9 @@ At the highest level, exploration enters **coordination space**: heterogeneous a
 | **Learnable orchestration** | RL-evolved coordination topologies, optimisable agent graphs |
 
 ---
+
+<br>
+
 
 ## 6. Cross-Cutting Topics
 
@@ -287,6 +316,8 @@ At the highest level, exploration enters **coordination space**: heterogeneous a
 - Scalable coordination-space exploration without combinatorial explosion
 
 ---
+
+<br>
 
 ## 7. Citation
 
