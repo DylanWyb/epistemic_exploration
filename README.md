@@ -167,21 +167,21 @@ At Level 3, the agent crosses from internal reasoning into **situated interactio
 
 Agents operating in software-mediated environments (web, APIs, code interpreters):
 
-| Paradigm | Method | Key Idea |
-|:---------|:-------|:---------|
-| **Uncertainty-Driven** | JitRL | Count-based exploration bonus for unseen state-action pairs |
-| | Agent Q | MCTS with UCB for strategic state exploration |
-| | KnowSelf | Self-perceived capability boundaries trigger reflection |
-| | Search-o1 | Invokes web search upon encountering unfamiliar knowledge |
-| **Competence-Driven** | PilotRL | Three-stage progressive RL curriculum |
-| | Planner-R1 | Dense process-level rewards as priors |
-| | RLTR | Tool-use completeness rewards |
-| | Agent0-VL | Self-Evolving Reasoning Cycle (SERC) |
-| | Absolute Zero | Joint proposer-solver self-play |
-| **Reachability-Driven** | EGPO | Entropy bonus in advantage over CoT tokens |
-| | EPO | Three-part entropy control for multi-turn RL |
-| | RAPO | Retrieval-augmented policy optimization |
-| | E³-TIR | Expert-guided branching at high-entropy prefixes |
+| Paradigm | Method | Key Idea | Project |
+|:---------|:-------|:---------|:--------|
+| **Uncertainty-Driven** | [JitRL](https://arxiv.org/abs/2601.18510) | Count-based exploration bonus for unseen state-action pairs | [🔗](https://github.com/liushiliushi/JitRL) |
+| | [Agent Q](https://arxiv.org/abs/2408.07199) | MCTS with UCB for strategic state exploration | - |
+| | [KnowSelf](https://arxiv.org/abs/2504.03553) | Self-perceived capability boundaries trigger reflection | [🔗](https://github.com/zjunlp/KnowSelf) |
+| | [Search-o1](https://arxiv.org/abs/2501.05366) | Invokes web search upon encountering unfamiliar knowledge | [🔗](https://github.com/RUC-NLPIR/Search-o1) |
+| **Competence-Driven** | [PilotRL](https://arxiv.org/abs/2508.00344) | Three-stage progressive RL curriculum | - |
+| | [Planner-R1](https://arxiv.org/abs/2509.25779) | Dense process-level rewards as priors | - |
+| | [RLTR](https://arxiv.org/abs/2508.19598) | Tool-use completeness rewards | - |
+| | [Agent0-VL](https://arxiv.org/abs/2511.19900) | Self-Evolving Reasoning Cycle (SERC) | [🔗](https://github.com/aiming-lab/Agent0) |
+| | [Absolute Zero](https://arxiv.org/abs/2505.03335) | Joint proposer-solver self-play | [🔗](https://github.com/LeapLabTHU/Absolute-Zero-Reasoner) |
+| **Reachability-Driven** | [EGPO](https://arxiv.org/abs/2508.05118) | Entropy bonus in advantage over CoT tokens | [🔗](https://github.com/BingguangHao/RLFC) |
+| | [EPO](https://arxiv.org/abs/2509.22576) | Three-part entropy control for multi-turn RL | [🔗](https://github.com/WujiangXu/EPO) |
+| | [RAPO](https://arxiv.org/abs/2603.03078) | Retrieval-augmented policy optimization | - |
+| | [E³-TIR](https://arxiv.org/abs/2604.09455) | Expert-guided branching at high-entropy prefixes | [🔗](https://github.com/yuki-younai/E3-TIR) |
 
 ### 3.2 Embodied Agents
 
