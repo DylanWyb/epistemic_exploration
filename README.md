@@ -55,6 +55,9 @@
   - [2.3 Reachability-Driven Exploration](#23-reachability-driven-exploration)
 - [3. Level 3: Reasoner → Agent (Perception- & Action-Space Exploration)](#3-level-3-reasoner--agent--perception--action-space-exploration)
   - [3.1 Digital Agents](#31-digital-agents)
+    - [3.1.1 Uncertainty-Driven Exploration](#311-uncertainty-driven-exploration)
+    - [3.1.2 Competence-Driven Exploration](#312-competence-driven-exploration)
+    - [3.1.3 Reachability-Driven Exploration](#313-reachability-driven-exploration)
   - [3.2 Embodied Agents](#32-embodied-agents)
 - [4. Level 4: Agent → Prospector (Imagination-Space Exploration)](#4-level-4-agent--prospector--imagination-space-exploration)
 - [5. Level 5: Prospector → Ecosystem (Coordination-Space Exploration)](#5-level-5-prospector--ecosystem--coordination-space-exploration)
@@ -167,21 +170,45 @@ At Level 3, the agent crosses from internal reasoning into **situated interactio
 
 Agents operating in software-mediated environments (web, APIs, code interpreters):
 
-| Paradigm | Method | Key Idea | Project |
-|:---------|:-------|:---------|:--------|
-| **Uncertainty-Driven** | [JitRL](https://arxiv.org/abs/2601.18510) | Count-based exploration bonus for unseen state-action pairs | [🔗](https://github.com/liushiliushi/JitRL) |
-| | [Agent Q](https://arxiv.org/abs/2408.07199) | MCTS with UCB for strategic state exploration | - |
-| | [KnowSelf](https://arxiv.org/abs/2504.03553) | Self-perceived capability boundaries trigger reflection | [🔗](https://github.com/zjunlp/KnowSelf) |
-| | [Search-o1](https://arxiv.org/abs/2501.05366) | Invokes web search upon encountering unfamiliar knowledge | [🔗](https://github.com/RUC-NLPIR/Search-o1) |
-| **Competence-Driven** | [PilotRL](https://arxiv.org/abs/2508.00344) | Three-stage progressive RL curriculum | - |
-| | [Planner-R1](https://arxiv.org/abs/2509.25779) | Dense process-level rewards as priors | - |
-| | [RLTR](https://arxiv.org/abs/2508.19598) | Tool-use completeness rewards | - |
-| | [Agent0-VL](https://arxiv.org/abs/2511.19900) | Self-Evolving Reasoning Cycle (SERC) | [🔗](https://github.com/aiming-lab/Agent0) |
-| | [Absolute Zero](https://arxiv.org/abs/2505.03335) | Joint proposer-solver self-play | [🔗](https://github.com/LeapLabTHU/Absolute-Zero-Reasoner) |
-| **Reachability-Driven** | [EGPO](https://arxiv.org/abs/2508.05118) | Entropy bonus in advantage over CoT tokens | [🔗](https://github.com/BingguangHao/RLFC) |
-| | [EPO](https://arxiv.org/abs/2509.22576) | Three-part entropy control for multi-turn RL | [🔗](https://github.com/WujiangXu/EPO) |
-| | [RAPO](https://arxiv.org/abs/2603.03078) | Retrieval-augmented policy optimization | - |
-| | [E³-TIR](https://arxiv.org/abs/2604.09455) | Expert-guided branching at high-entropy prefixes | [🔗](https://github.com/yuki-younai/E3-TIR) |
+#### 3.1.1 Uncertainty-Driven Exploration
+
+Methods that acquire information under partial observability by prioritising uncertain states, tool calls, or capability boundaries:
+
+| Method | Key Idea | Paper |
+|:-------|:---------|:------|
+| **JitRL** | Count-based exploration bonus for unseen state-action pairs | [Just-In-Time Reinforcement Learning: Continual Learning in LLM Agents Without Gradient Updates (2026)](https://arxiv.org/abs/2601.18510) |
+| **RAP** | MCTS/UCB-style planning for strategic state exploration | [Reasoning with Language Model is Planning with World Model (2023)](https://doi.org/10.18653/v1/2023.emnlp-main.507) |
+| **Agent Q** | MCTS with UCB for autonomous agent learning | [Agent Q: Advanced Reasoning and Learning for Autonomous AI Agents (2024)](https://arxiv.org/abs/2408.07199) |
+| **LAST** | Tree search that unifies reasoning, acting, and planning | [Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models (2024)](https://arxiv.org/abs/2310.04406) |
+| **KnowSelf** | Self-perceived capability boundaries trigger reflection | [Agentic Knowledgeable Self-awareness (2025)](https://arxiv.org/abs/2504.03553) |
+| **Search-o1** | Invokes web search upon encountering unfamiliar knowledge | [Search-o1: Agentic Search-Enhanced Large Reasoning Models (2025)](https://doi.org/10.18653/v1/2025.emnlp-main.276) |
+
+#### 3.1.2 Competence-Driven Exploration
+
+Methods that tame combinatorial tool-use spaces through curricula, process-level credit assignment, and self-generated training tasks:
+
+| Method | Key Idea | Paper |
+|:-------|:---------|:------|
+| **PilotRL** | Three-stage progressive RL curriculum | [PilotRL: Training Language Model Agents via Global Planning-Guided Progressive Reinforcement Learning (2025)](https://arxiv.org/abs/2508.00344) |
+| **ReSum-GRPO** | Context summarization for long-horizon search training | [ReSum: Unlocking Long-Horizon Search Intelligence via Context Summarization (2025)](https://arxiv.org/abs/2509.13313) |
+| **ETO** | Exploration-based trajectory optimization from trial and error | [Trial and Error: Exploration-Based Trajectory Optimization for LLM Agents (2024)](https://arxiv.org/abs/2403.02502) |
+| **Planner-R1** | Dense process-level rewards as priors | [Planner-R1: Reward Shaping Enables Efficient Agentic RL with Smaller LLMs (2025)](https://arxiv.org/abs/2509.25779) |
+| **RLTR** | Tool-use completeness rewards | [Encouraging Good Processes Without the Need for Good Answers: Reinforcement Learning for LLM Agent Planning (2025)](https://arxiv.org/abs/2508.19598) |
+| **GiGPO** | State-level relative advantages from grouped rollouts | [Group-in-Group Policy Optimization for LLM Agent Training (2025)](https://arxiv.org/abs/2505.10978) |
+| **Agent0-VL** | Self-Evolving Reasoning Cycle (SERC) | [Agent0-VL: Exploring Self-Evolving Agent for Tool-Integrated Vision-Language Reasoning (2025)](https://arxiv.org/abs/2511.19900) |
+| **Absolute Zero** | Joint proposer-solver self-play | [Absolute Zero: Reinforced Self-play Reasoning with Zero Data (2025)](https://arxiv.org/abs/2505.03335) |
+
+#### 3.1.3 Reachability-Driven Exploration
+
+Methods that preserve behavioural flexibility by regulating entropy or injecting useful off-policy experience:
+
+| Method | Key Idea | Paper |
+|:-------|:---------|:------|
+| **EGPO** | Entropy bonus in advantage over CoT tokens | [Exploring Superior Function Calls via Reinforcement Learning (2025)](https://arxiv.org/abs/2508.05118) |
+| **EPO** | Entropy control for multi-turn agent RL | [EPO: Entropy-regularized Policy Optimization for LLM Agents Reinforcement Learning (2025)](https://arxiv.org/abs/2509.22576) |
+| **ENTROPO** | Entropy-enhanced multi-turn preference optimization | [Building Coding Agents via Entropy-Enhanced Multi-Turn Preference Optimization (2025)](https://arxiv.org/abs/2509.12434) |
+| **RAPO** | Retrieval-augmented policy optimization | [RAPO: Expanding Exploration for LLM Agents via Retrieval-Augmented Policy Optimization (2026)](https://arxiv.org/abs/2603.03078) |
+| **E³-TIR** | Expert-guided branching at high-entropy prefixes | [E3-TIR: Enhanced Experience Exploitation for Tool-Integrated Reasoning (2026)](https://arxiv.org/abs/2604.09455) |
 
 ### 3.2 Embodied Agents
 
