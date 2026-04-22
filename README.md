@@ -218,9 +218,7 @@ The Prospector internalises a **world model** and faces a **dual exploration pro
 
 ### 4.1 Surveys & Overviews
 
-- **A survey of monte carlo tree search methods** (2012) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
-- **Survey of model-based reinforcement learning: Applications on robotics** (2017) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
 - **A survey of learning in multiagent environments: Dealing with non-stationarity** (2017) <a href="https://arxiv.org/abs/1707.09183"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
@@ -249,7 +247,6 @@ The Prospector internalises a **world model** and faces a **dual exploration pro
 
 ### 4.2 Foundations & Classic MBRL
 
-- **Adaptive confidence bounds for exploration--exploitation trade-offs** (1991) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
 - **What uncertainties do we need in bayesian deep learning for computer vision?** (2017) <a href="https://arxiv.org/abs/1703.04977"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
@@ -323,7 +320,6 @@ The Prospector internalises a **world model** and faces a **dual exploration pro
 
 - **Curiosity in Hindsight: Intrinsic Exploration in Stochastic Environments** (2022) <a href="https://arxiv.org/abs/2211.10515"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
-- **Information-theoretic model selection for optimal prediction** (2023) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
 - **Active Exploration in Bayesian Model-based Reinforcement Learning for Robot Manipulation** (2024) <a href="https://arxiv.org/abs/2404.01867"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
@@ -343,24 +339,17 @@ The Prospector internalises a **world model** and faces a **dual exploration pro
 
 - **General Exploratory Bonus for Optimistic Exploration in RLHF** (2025) <a href="https://arxiv.org/abs/2510.03269"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
-- **Information-Theoretic Intrinsic Motivation for Reinforcement Learning in Combinatorial Routing** (2026) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
 - **SuS: Strategy-aware Surprise for Intrinsic Exploration** (2026) <a href="https://arxiv.org/abs/2601.10349"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
 
 ### 4.5 Competence-Driven MBRL & Safe Exploration
 
-- **Dyna, an integrated architecture for learning, planning, and reacting** (1991) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
-- **Efficient Exploration In Reinforcement Learning** (1992) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
-- **Prediction, learning, and games** (2006) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
-- **PILCO: A model-based and data-efficient approach to policy search** (2011) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
-- **Model-Based Reinforcement Learning with Adversarial Training** (2014) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
-- **Model regularization for stable sample rollouts** (2014) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
 - **Deep exploration via bootstrapped DQN** (2016) <a href="https://arxiv.org/abs/1602.04621"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
@@ -404,7 +393,6 @@ The Prospector internalises a **world model** and faces a **dual exploration pro
 
 - **Accelerating Model-Based Reinforcement Learning with State-Space World Models** (2025) <a href="https://arxiv.org/abs/2502.20168"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
-- **Risk-Aware Reinforcement Learning with Dynamic Safety Filter for Collision Risk Mitigation in Mobile Robot Navigation** (2025) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
 - **World model architectures in reinforcement learning: an exploration of strengths and limitations** (2025) <a href="https://arxiv.org/abs/2406.00483"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
@@ -440,7 +428,6 @@ The Prospector internalises a **world model** and faces a **dual exploration pro
 
 ### 4.7 Autonomous Driving World Models
 
-- **Recent development and applications of SUMO-Simulation of Urban MObility** (2012) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
 - **CARLA: An Open Urban Driving Simulator** (2017) <a href="https://arxiv.org/abs/1711.03938"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
@@ -555,15 +542,12 @@ The Prospector internalises a **world model** and faces a **dual exploration pro
 
 - **RLVR-World: Training World Models with Reinforcement Learning** (2025) <a href="https://arxiv.org/abs/2505.13934"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
-- **4D Latent World Model for Robot Planning** (2025) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
-- **Latent Action Robot Foundation World Models for Cross-Embodiment Adaptation** (2025) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
 - **Next-Latent Prediction Transformers Learn Compact World Models** (2025) <a href="https://arxiv.org/abs/2511.05963"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
 - **Act2Goal: From World Model To General Goal-conditioned Policy** (2025) <a href="https://arxiv.org/abs/2512.23541"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
-- **Interpretable World Model Imaginations as Deep Reinforcement Learning Explanation** (2025) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
 - **WorldVLA: Towards Autoregressive Action World Model** (2025) <a href="https://arxiv.org/abs/2506.21539"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
@@ -621,9 +605,7 @@ The Prospector internalises a **world model** and faces a **dual exploration pro
 
 ### 4.10 Causal & Hierarchical World Models
 
-- **Feudal reinforcement learning** (1993) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
-- **The theory theory as an alternative to the innateness hypothesis** (2004) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
 - **Hierarchical deep reinforcement learning: Integrating temporal abstraction and intrinsic motivation** (2016) <a href="https://arxiv.org/abs/1604.06057"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
@@ -635,7 +617,6 @@ The Prospector internalises a **world model** and faces a **dual exploration pro
 
 - **Data-efficient hierarchical reinforcement learning** (2018) <a href="https://arxiv.org/abs/1805.08296"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
-- **Learning an embedding space for transferable robot skills** (2018) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
 - **Time-agnostic prediction: Predicting predictable video frames** (2018) <a href="https://arxiv.org/abs/1808.07784"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
@@ -645,7 +626,6 @@ The Prospector internalises a **world model** and faces a **dual exploration pro
 
 - **CLEVRER: Collision events for video representation and reasoning** (2019) <a href="https://arxiv.org/abs/1910.01442"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
-- **Learning to infer latent classes without labeled data** (2019) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
 - **Causal discovery in physical systems from videos** (2020) <a href="https://arxiv.org/abs/2007.00631"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
@@ -661,16 +641,13 @@ The Prospector internalises a **world model** and faces a **dual exploration pro
 
 - **Towards causal representation learning** (2022) <a href="https://arxiv.org/abs/2102.11107"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
-- **Anticipating the risks and benefits of counterfactual world simulation models** (2023) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
-- **Causal world modeling for robot control** (2023) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
 - **Exploring the limits of hierarchical world models in reinforcement learning** (2024) <a href="https://arxiv.org/abs/2406.00483"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
 
 ### 4.11 Benchmarks, Simulators & Datasets
 
-- **MuJoCo: A physics engine for model-based control** (2012) <img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white">
 
 - **The arcade learning environment: An evaluation platform for general agents** (2013) <a href="https://arxiv.org/abs/1207.4708"><img src="https://img.shields.io/badge/Paper-red?logo=arxiv&logoColor=white"></a>
 
